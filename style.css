@@ -3,43 +3,455 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Garet";
-  src: url()
-}
 .container{
   height: 100vh;
   width: 100%;
-  padding: 5%;
+  padding: 10%;
   box-sizing: border-box;
 }
 
 .container.black-on-white{
   color: #fff;
   background-color: #000;
+  font-family: helvetica;
 }
 
 .container.white-on-black{
   color: #000;
+  font-family: helvetica;
 }
 
-.section {
+#intro-text{
   display: flex;
+  align-items: first baseline;
+  columns: 2;
+  column-gap: 20px; 
 }
-
-section article h3:first-child {
-  flex: 1 300px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  flex-flow: column;
-  font-size: 30px;
+#howtouse{
+  font-size: 40px;
 }
-
-section article h1:last-child {
-  flex: 2 500px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+#contrast{
   font-size: 60px;
+  text-indent: 15%;
+}
+
+#elements-text{
+  display: flex;
+  align-items: first baseline;
+}
+#text-creates{
+  font-size: 40px;
+}
+#style-size-proximity{
+  font-size: 40px;
+  align-self: end;
+  column-span: all;
+}
+
+#important-placement{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0px;
+  grid-auto-rows: 30px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+}
+#important-contrast{
+  font-size: 60px;
+  grid-area: b;
+  align-items: end;
+}
+#what-is-important{
+  font-size: 40px;
+  grid-area: d;
+  align-items: start;
+}
+
+#size-is-important{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: 22px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d"
+    "e e e e f f f f"
+    "e e e e f f f f";
+}
+#size{
+  font-size: 60px;
+  grid-area: b;
+}
+#contrast-guides{
+  font-size: 20px;
+  grid-area: d;
+  align-self: center;
+  text-indent: 10%;
+}
+#important{
+  font-size: 60px;
+  grid-area: f;
+  text-indent: 20%;
+}
+
+#important-click-boxes{
+  font-size: 20px;
+}
+#important-boxes{
+  margin: 80px 0 0 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  grid-template-areas:
+    "a b";
+}
+.button{
+  border: 4px solid #000;
+  background-color: #fff;
+  width: 250px;
+  height: 150px;
+  grid-area: a;
+}
+#bad-important-one{
+  font-size: 20px;
+  text-align: left;
+  text-indent: 10%;
+}
+#bad-important-two{
+  font-size: 20px;
+  text-align: left;
+  text-indent: 10%;
+}
+.button2{
+  box-sizing: border-box;
+  border: 4px solid #000;
+  width: 250px;
+  height: 150px;
+  grid-area: b;
+  background-color: #fff;
+}
+#this-right-here{
+  font-size: 30px;
+  text-align: left;
+  text-indent: 20px;
+}
+#is-important{
+  font-size: 20px;
+  text-align: left;
+  text-indent: 20px;
+}
+#important-response{
+  display: grid;
+  margin: 30px 0 0 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  grid-template-areas:
+    "a b"
+}
+#important-try-again{
+  font-size: 30px;
+  font-style: bold;
+  grid-area: a;
+  text-indent: 80px;
+  display: none;
+}
+#important-correct{
+  font-size: 30px;
+  font-style: bolder;
+  grid-area: b;
+  text-indent: 80px;
+  display: none;
+}
+
+#different-elements{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: 22px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d"
+    "e e e e f f f f"
+    "e e e e f f f f";
+}
+#contrast-element{
+  font-size: 60px;
+  grid-area: d;
+}
+#is-made-with-elements{
+  font-size: 40px;
+  grid-area: f;
+}
+
+#style-contrast{
+  display: flex;
+  column-count; 2;
+  column-gap: 30px;
+  align-items: first baseline;
+}
+#style{
+  font-family: "Brush Script MT", cursive;
+  font-size: 80px;
+}
+#made-with-contrast{
+  font-size: 40px;
+}
+
+#different-or-same{
+  display: flex;
+  column-count; 4;
+  column-gap: 30px;
+  align-items: first baseline;
+}
+#different{
+  font-family: "Brush Script MT", cursive;
+  font-size: 80px;
+}
+#or{
+  font-size: 40px;
+}
+#main-similar{
+  font-size: 60px;
+  text-decoration: line-through;
+}
+#the-same{
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+#style-boxes{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0px;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+#bad-style{
+  background-color: #fff;
+  border: 4px solid #000;
+  width: 450px;
+  height: 200px;
+  grid-area: a;
+  margin-top: 20px;
+}
+#bad-if-its{
+  font-size: 40px;
+  text-indent: 20px;
+  text-align: left;
+}
+#bad-similar{
+  font-size: 40px;
+  text-indent: 20px;
+  text-align: left;
+  font-family: "Futura";
+}
+#bad-blend{
+  font-size: 40px;
+  text-indent: 20px;
+  text-align: left;
+}
+#good-style{
+  margin-top: 20px;
+  border: 4px solid #000;
+  width: 450px;
+  height: 200px;
+  grid-area: c;
+  background-color: #fff;
+}
+#good-if-its{
+  font-size: 40px;
+  text-indent: 20px;
+  text-align: left;
+}
+#good-similar{
+  font-size: 40px;
+  font-family: "Rockwell", bolder;
+  font-style: italic;
+  text-indent: 20px;
+  text-align: left;
+}
+#good-blend{
+  font-size: 40px;
+  text-indent: 20px;
+  text-align: left;
+}
+#style-try-again{
+  font-size: 30px;
+  font-style: bold;
+  grid-area: b;
+  margin-top: 70px;
+  display: none;
+}
+#style-correct{
+  font-size: 30px;
+  font-style: bold;
+  grid-area: d;
+  margin-top: 70px;
+  display: none;
+}
+
+#breathing-box{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0px;
+  grid-auto-rows: 30px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d"
+    "c c c c d d d d";
+}
+#breathing-element-box{
+  grid-area: d;
+}
+#contrast-breathing-room{
+  font-size: 60px;
+}
+#gives-everything-a-spot{
+  font-size: 40px;
+}
+#breathing-room{
+  font-size: 40px;
+}
+
+#proximity-box{
+  float: left;
+}
+#proximity{
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#proximity-contrast{
+  font-size: 40px;
+  float: right;
+}
+#breathing-room-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  grid-auto-rows: 70px;
+  grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "d d d d"
+    "e e e e";
+}
+#proximity-spot{
+  font-size: 40px;
+  grid-area: d;
+  text-align: right;
+}
+#proximity-breathing-room{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  grid-area: e;
+  text-align: right;
+}
+
+#proximity-boxes{
+  margin: 130px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0px 50px;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+#good-proximity{
+  border: 4px solid #000;
+  width: 350px;
+  height: 200px;
+  grid-area: a;
+  background-color: #fff;
+}
+#good-hey{
+  margin: 40px 0 0 25px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bolder;
+}
+#good-breathe{
+  margin: 20px 25px 0 0;
+  text-align: right;
+  font-size: 20px;
+}
+#bad-proximity{
+  border: 4px solid #000;
+  width: 350px;
+  height: 200px;
+  grid-area: b;
+  background-color: #fff;
+}
+#bad-hey{
+  margin: 20px 20px 0 0;
+  text-align: right;
+  font-size: 40px;
+  font-weight: bolder;
+}
+#bad-breathe{
+  margin: 0 20px 0 0;
+  text-align: right;
+  font-size: 20px;
+}
+#proximity-try-again{
+  font-size: 30px;
+  font-style: bold;
+  grid-area: d;
+  text-indent: 50px;
+  margin-top: 20px;
+  display: none;
+}
+#proximity-correct{
+  font-size: 30px;
+  font-style: bolder;
+  grid-area: c;
+  text-indent: 50px;
+  margin-top: 20px;
+  display: none;
+}
+
+#final-statement{
+  margin-top: 10%;
+  float: right;
+}
+#contrast-communication{
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#important-contrast{
+  margin-top: 1%;
+  font-size: 50px;
+}
+#effective-communication{
+  margin-top: 2%;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#year{
+  margin-top: 30%;
+  text-indent: 40%;
+  font-size: 60px;
+}
+#signature{
+  margin-top: 2%;
+  text-indent: 40%;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
